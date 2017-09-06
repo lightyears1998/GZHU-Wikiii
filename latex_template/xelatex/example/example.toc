@@ -1,0 +1,2 @@
+\contentsline {section}{\numberline {1}中文标题}{2}{section.1}
+\contentsline {section}{\numberline {2}About the foundry}{2}{section.2}

@@ -1,0 +1,27 @@
+\documentclass[14pt, a4paper]{article}
+\include{cnstyle}
+\usepackage{multicol}
+
+\begin{document}
+\title{\textbf{测试文档}}
+\author{作者名}
+\maketitle
+\begin{multicols}{2}
+    \tableofcontents
+\end{multicols}
+\newpage
+\twocolumn
+\section{中文标题}
+    这句话后来演变成“饮水思源”这个成语，意为喝水的时候想一想流水的源头，比喻不忘本$^{\ref{fig1}}$。
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width = 2.2in]{fig/Adobe_Kaiti.png}
+        \caption{思源楷体}
+        \label{fig1}
+    \end{figure}
+\section{About the foundry}
+    The Adobe Originals program started in 1989 as an in-house type foundry at Adobe, brought together to create original typefaces of exemplary design quality, technical fidelity, and aesthetic longevity.
+    
+    Today the Type team’s mission is to conduct original research and development for type at Adobe, making sophisticated and even experimental typefaces that explore the possibilities of design and technology. Typefaces released as Adobe Originals — fully-featured families and smaller “Concept” projects alike — are the result of years of work and study, regarded as industry standards for the ambition and quality of their development.
+\end{document}
+
