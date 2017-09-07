@@ -14,7 +14,7 @@ md5: `2ef856e84f49180eeb733b181a3f0474`
 
 If you want to relay the network by a wireless router, you need to flash the OpenWRT/LEDE image file to your wireless router. And then check this pages:
 
-Forked Form:
+Fork Form:
 
 [agentx1](https://bitbucket.org/CrazyBoyFeng/agentx1)
 
