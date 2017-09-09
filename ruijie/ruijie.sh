@@ -12,8 +12,7 @@ do
         if test -z "$pid"; then                                                                                                                              
 ~/Documents/CMOS-AO
             echo "empty"
-            /usr/bin/bash /usr/bin/rjsupplicant/rjsupplicant.sh -d 1 -u 1519400067 -p 
-heyitonglaila4
+            /usr/bin/bash /usr/bin/rjsupplicant/rjsupplicant.sh -d 1 -u <id> -p <password>
         else
             echo "Killing the rjsupplicant pid=$pid ..."
             kill -KILL $pid
