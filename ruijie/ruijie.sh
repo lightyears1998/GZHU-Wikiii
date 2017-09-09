@@ -8,15 +8,18 @@ do
 		echo "success"
 	else
 		echo "failed & try to connecting ..."
-        pid=`ps -an | grep rjsupplicant | grep -v grep | grep -o -w "^[0-9]*" | tail -n1`
-        if test -z "$pid"; then                                                                                                                              ~/Documents/CMOS-AO
+        pid=`ps -aux | grep rjsupplicant | grep -v grep | grep -o -w "^[0-9]*" | tail -n1`
+        if test -z "$pid"; then                                                                                                                              
+~/Documents/CMOS-AO
             echo "empty"
-            /usr/bin/bash /usr/bin/rjsupplicant/rjsupplicant.sh -d 1 -u <id> -p <password>
+            /usr/bin/bash /usr/bin/rjsupplicant/rjsupplicant.sh -d 1 -u 1519400067 -p 
+heyitonglaila4
         else
             echo "Killing the rjsupplicant pid=$pid ..."
-            kill $pid
+            kill -KILL $pid
         fi
 
     fi
 	sleep 3
 done
+
