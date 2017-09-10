@@ -1,5 +1,7 @@
 # Simple tutorials for Linux user
 
+Depends: "systemd" "screen"
+
 - Creat a folder `/usr/bin/rjsupplicant` by root permission.
 - Move `./official_pkg/*` to `/usr/bin/rjsupplicant`.
 - Add your account information to `ruijie.sh`.
