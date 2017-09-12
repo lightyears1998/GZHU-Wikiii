@@ -1,37 +1,37 @@
-# Simple tutorials for Linux user
+# Linux操作系统简明指引
 
-Depends: "systemd" "screen"
+依赖项：“systemd” “screen”
 
-- Creat a folder `/usr/bin/rjsupplicant` by root permission.
-- Move `./official_pkg/*` to `/usr/bin/rjsupplicant`.
-- Add your account information to `ruijie.sh`.
-- Move `ruijie.sh` to `/usr/bin/rjsupplicant` and add the executable permission for it.
-- Start your systemd service by `sudo systemctl start ruijie.service`.
+- 以root权限创建目录 `/usr/bin/rjsupplicant`。
+- 将`./official_pkg/*`移动到`/usr/bin/rjsupplicant`。
+- 在`ruijie.sh`中将你的账户信息补充完整。
+- 将`ruijie.sh`移动到`/usr/bin/rjsupplicant`并赋予可执行权限。
+- 以`sudo systemctl start ruijie.service`启动服务。
 
-Official Client:
+锐捷官方客户端：
 
-[Download](http://202.192.18.32:8081/Setup/RG_Supplicant_For_Linux_V1.31.zip)
+[Download（仅内网访问）](http://202.192.18.32:8081/Setup/RG_Supplicant_For_Linux_V1.31.zip)
 
 md5: `2ef856e84f49180eeb733b181a3f0474`
 
-If you want to relay the network by a wireless router, you need to flash the OpenWRT/LEDE image file to your wireless router. And then check this pages:
+如果你想通过无线路由中继网络，需要向你的路由器刷入OpenWRT或LEDE镜像。请查看以下页面：
 
-Fork From:
+派生自：
 
 [agentx1](https://bitbucket.org/CrazyBoyFeng/agentx1)
 
-Other Version:
+其他选择：
 
 [agentx1 for LEDE/OpenWRT](https://github.com/GZHU-Dress/agentx1-lede)
 
-Example:
+使用示例：
 
-Use the ssh command to log in to the wireless router at first and upload the suitable client of the architecture(eg:`agentx1`) to `/usr/bin/`.
+通过SSH登录你的无线路由器，然后根据路由器架构选择合适的中继客户端（如：`agentx1`），并上传至`/usr/bin/`。
 
 ```shell
 ruijie -L br-lan -W eth0.2 -p LOCAL -a AFTER
-# At this time you need to open ruijie client on your computer and complete the certification.
+# 此时脚本会调用锐捷官方客户端完成入网用户身份认证。
 opkg update
 opkg install screen
-screen ruijie -L br-lan -W eth0.2 -p LOCAL -a AFTER  # Background process
+screen ruijie -L br-lan -W eth0.2 -p LOCAL -a AFTER  # 使脚本在后台持续运行
 ```
