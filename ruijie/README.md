@@ -1,5 +1,7 @@
 # Simple tutorials for Linux user
 
+> [Chinese:](https://github.com/GZHU-Dress/GZHU-Wikiii/blob/master/ruijie/README_zh.md)
+
 Depends: "systemd" "screen"
 
 - Creat a folder `/usr/bin/rjsupplicant` by root permission.
