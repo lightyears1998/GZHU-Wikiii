@@ -40,4 +40,4 @@ screen agentx1 -L br-lan -W eth0.2 -p LOCAL -a AFTER  # Background process
 
 Note:
 
-`rjsupplicant_multi_nic` is a cracked version which allows you enable multiple NICs. (Currently only x86 version.)
+`rjsupplicant_multi_nic` is a cracked version which allows you enable multiple NICs.

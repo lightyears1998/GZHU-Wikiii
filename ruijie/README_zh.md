@@ -38,4 +38,4 @@ screen agentx1 -L br-lan -W eth0.2 -p LOCAL -a AFTER  # 使脚本在后台持续
 
 说明：
 
-`rjsupplicant_multi_nic` 是可以使用多网卡的破解版本。（目前只有 x86 版。）
+`rjsupplicant_multi_nic` 是可以使用多网卡的破解版本。
