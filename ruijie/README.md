@@ -31,9 +31,13 @@ Example:
 Use the ssh command to log in to the wireless router at first and upload the suitable client of the architecture(eg:`agentx1`) to `/usr/bin/`.
 
 ```shell
-ruijie -L br-lan -W eth0.2 -p LOCAL -a AFTER
+agentx1 -L br-lan -W eth0.2 -p LOCAL -a AFTER
 # At this time you need to open ruijie client on your computer and complete the certification.
 opkg update
 opkg install screen
-screen ruijie -L br-lan -W eth0.2 -p LOCAL -a AFTER  # Background process
+screen agentx1 -L br-lan -W eth0.2 -p LOCAL -a AFTER  # Background process
 ```
+
+Note:
+
+`rjsupplicant_multi_nic` is a cracked version which allows you enable multiple NICs.
