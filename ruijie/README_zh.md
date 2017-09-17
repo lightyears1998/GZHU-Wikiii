@@ -30,7 +30,7 @@ md5: `2ef856e84f49180eeb733b181a3f0474`
 
 ```shell
 agentx1 -L br-lan -W eth0.2 -p LOCAL -a AFTER
-# 此时脚本会调用锐捷官方客户端完成入网用户身份认证。
+# 此时，你需要打开锐捷客户端完成入网身份认证。
 opkg update
 opkg install screen
 screen agentx1 -L br-lan -W eth0.2 -p LOCAL -a AFTER  # 使脚本在后台持续运行
