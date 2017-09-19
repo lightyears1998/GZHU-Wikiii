@@ -6,7 +6,7 @@ VPN 服务器地址: `10.129.1.1` 用户名无需修改
 密码计算: [telecom-password.html](telecom-password.html). 算出来的密码末尾有特殊字符.
 
 ## Windows
-> 在 Windows XP 和 Windows 10 下测试成功.
+> 在 Windows XP, Windows 7 和 Windows 10 下测试成功.
 
 先导入注册表 `DisableIPSec.reg` . 然后重启使其生效.
 > 注意: 导入此注册表会关闭 VPN 的 IPSec 功能, 你将无法连接需要 IPSec 的 VPN, 除非再次开启.
