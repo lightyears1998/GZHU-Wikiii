@@ -16,7 +16,7 @@ VPN 服务器地址: `10.129.1.1` 用户名无需修改
 连接时用户名输入电信给的用户名, 密码输入算出来的密码, 因为密码中含有特殊字符, 只能通过复制粘贴输入.
 
 ## Linux
-Lubuntu 下通过 NetworkManager-l2tp 连接时出现错误, 暂不知道解决方法.
+需要修改 xl2tpd 让其使用空 secret, [详细](https://github.com/GZHU-Dress/xl2tpd/commit/ce8f62464c20394ed1fe6b8319ebf3cbfa2c5aea).
 
 ## macOS
 最新的 macOS 不能关闭 IPSec, 所以暂无办法连接. (也许第三方 VPN 可以?)
