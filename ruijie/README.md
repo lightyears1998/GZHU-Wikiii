@@ -2,6 +2,8 @@
 
 > [Chinese:](https://github.com/GZHU-Dress/GZHU-Wikiii/blob/master/ruijie/README_zh.md)
 
+## Campus network verification
+
 Depends: "systemd" "screen"
 
 - Creat a folder `/usr/bin/rjsupplicant` by root permission.
@@ -41,3 +43,11 @@ screen agentx1 -L br-lan -W eth0.2 -p LOCAL -a AFTER  # Background process
 Note:
 
 `rjsupplicant_multi_nic` is a cracked version which allows you enable multiple NICs.
+
+## IPV6 penetrate
+
+Example:
+```shell
+ebtables -t broute -A BROUTING -p ! ipv6 -j DROP -i eth0.2
+brctl addif br-lan eth0.2
+```
