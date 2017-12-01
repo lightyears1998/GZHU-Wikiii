@@ -27,7 +27,7 @@ Thanks for the contributions of [ysc3839](https://github.com/ysc3839) and [the o
 
 How to use:
 ```shell
-sudo ./minieap -w -u <id> -p <password> -n <network device> --pkt-plugin rjv3 -d 1 -a 1
+sudo ./minieap -w -u <id> -p <password> -n <network device> --pkt-plugin rjv3 -d 1 -a 1 --rj-option 79:02
 ```
 ### Relay client
 
