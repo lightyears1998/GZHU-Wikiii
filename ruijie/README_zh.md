@@ -29,9 +29,13 @@ md5: `2ef856e84f49180eeb733b181a3f0474`
 通过SSH登录你的无线路由器，然后根据路由器架构选择合适的中继客户端（如：`agentx1`），并上传至`/usr/bin/`。
 
 ```shell
-ruijie -L br-lan -W eth0.2 -p LOCAL -a AFTER
-# 此时脚本会调用锐捷官方客户端完成入网用户身份认证。
+agentx1 -L br-lan -W eth0.2 -p LOCAL -a AFTER
+# 此时，你需要打开锐捷客户端完成入网身份认证。
 opkg update
 opkg install screen
-screen ruijie -L br-lan -W eth0.2 -p LOCAL -a AFTER  # 使脚本在后台持续运行
+screen agentx1 -L br-lan -W eth0.2 -p LOCAL -a AFTER  # 使脚本在后台持续运行
 ```
+
+说明：
+
+`rjsupplicant_multi_nic` 是可以使用多网卡的破解版本。
